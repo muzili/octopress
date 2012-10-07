@@ -19,34 +19,34 @@ tags: android, emacs
 
 ** 创建AboveCamera应用
 *** 列出当前sdk支持的target, 以备后用
-#+begin_verse
+#+begin_quote
 android list targets
-#+end_verse
+#+end_quote
 *** 使用android create创建地一个应用
-#+begin_verse
+#+begin_quote
 android create project --target 8 --name AboveCamera \
 --path . --activity MainActivity --package abovelink.wifi.qr
-#+end_verse
+#+end_quote
 *** 创建initial git repos
-#+begin_verse
+#+begin_quote
 git init
 git add .
 git ci -m "Initial create the AboveCamera with 'android create'"
-#+end_verse
+#+end_quote
 *** 编译AboveCamera
-#+begin_verse
+#+begin_quote
 ant debug
-#+end_verse
+#+end_quote
 *** 使用'android avd'创建AVD
-#+begin_verse
+#+begin_quote
 android avd
-#+end_verse
+#+end_quote
 因为android系统的启动时间比较长，这是你可以去喝杯咖啡，
 当然，我比较倾向于白开水。
 *** 在虚拟机中运行AboveCamera
-#+begin_verse
+#+begin_quote
 adn debug install
-#+end_verse
+#+end_quote
 这时候就可以在虚拟机中看到你的第一个程序了。
 
 * Footnotes
