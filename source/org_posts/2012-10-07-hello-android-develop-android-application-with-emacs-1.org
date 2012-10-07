@@ -14,8 +14,8 @@ tags: android, emacs
 主要是探索如何使用单纯的开发环境来开发Android应用程序。
 
 ** 安装Android SDK/NDK
-   * Download and install SDK from http://developer.android.com/sdk/index.html
-   * Download and install NDK from http://developer.android.com/tools/sdk/ndk/index.html
+   * Download and install SDK from[fn:1]
+   * Download and install NDK from[fn:2]
 
 ** 创建AboveCamera应用
 *** 列出当前sdk支持的target, 以备后用
@@ -48,3 +48,8 @@ android avd
 adn debug install
 #+end_verse
 这时候就可以在虚拟机中看到你的第一个程序了。
+
+* Footnotes
+[fn:1] http://developer.android.com/sdk/index.html
+[fn:2] http://developer.android.com/tools/sdk/ndk/index.html
+
