@@ -1,0 +1,50 @@
+#+BEGIN_HTML
+---
+layout: post
+title: "Hello Android: Develop Android Application with Emacs - 1"
+date: 2012-10-07 08:36
+comments: true
+categories: android
+tags: android, emacs
+---
+#+END_HTML
+* 开始
+我对IDE开发环境有着天然的抗拒，无论VS/Eclipse etc.
+对于Android开发环境来说，到处充斥着使用Eclipse， 本系列博客
+主要是探索如何使用单纯的开发环境来开发Android应用程序。
+
+** 安装Android SDK/NDK
+   * Download and install SDK from http://developer.android.com/sdk/index.html
+   * Download and install NDK from http://developer.android.com/tools/sdk/ndk/index.html
+
+** 创建AboveCamera应用
+*** 列出当前sdk支持的target, 以备后用
+#+begin_verse
+android list targets
+#+end_verse
+*** 使用android create创建地一个应用
+#+begin_verse
+android create project --target 8 --name AboveCamera \
+--path . --activity MainActivity --package abovelink.wifi.qr
+#+end_verse
+*** 创建initial git repos
+#+begin_verse
+git init
+git add .
+git ci -m "Initial create the AboveCamera with 'android create'"
+#+end_verse
+*** 编译AboveCamera
+#+begin_verse
+ant debug
+#+end_verse
+*** 使用'android avd'创建AVD
+#+begin_verse
+android avd
+#+end_verse
+因为android系统的启动时间比较长，这是你可以去喝杯咖啡，
+当然，我比较倾向于白开水。
+*** 在虚拟机中运行AboveCamera
+#+begin_verse
+adn debug install
+#+end_verse
+这时候就可以在虚拟机中看到你的第一个程序了。
