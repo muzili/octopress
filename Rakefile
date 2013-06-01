@@ -21,7 +21,7 @@ source_dir      = "source"    # source file directory
 blog_index_dir  = 'source'    # directory for your blog's index page (if you put your index in source/blog/index.html, set this to 'source/blog')
 deploy_dir      = "_deploy"   # deploy directory (for Github pages deployment)
 stash_dir       = "_stash"    # directory to stash posts for speedy generation
-posts_dir       = "_posts"    # directory for blog files
+posts_dir       = "org_posts"    # directory for blog files
 themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "org"  # default new post file extension when using the new_post task
 new_page_ext    = "org"  # default new page file extension when using the new_page task
@@ -105,13 +105,12 @@ task :new_post, :title do |t, args|
   end
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
-    post.puts "comments: true"
-    post.puts "categories: "
-    post.puts "---"
+    post.puts "#+TITLE: #{title.gsub(/&/,'&amp;')}"
+    post.puts "#+DATE: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+    post.puts "#+SETUPFILE: ~/AeroFS/org-sty/setupfile.org"
+    post.puts "#+JEKYLL_LAYOUT: post"
+    post.puts "#+JEKYLL_CATEGORIES:"
+    post.puts "#+JEKYLL_PUBLISHED: true"
   end
 end
 
