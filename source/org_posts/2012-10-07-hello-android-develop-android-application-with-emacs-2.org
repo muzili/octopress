@@ -1,13 +1,10 @@
-#+BEGIN_HTML
----
-layout: post
-title: "Hello Android: Develop Android Application with Emacs - 2"
-date: 2012-10-07 12:43
-comments: true
-categories: android
-tags: emacs, android
----
-#+END_HTML
+#+TITLE: Hello Android: Develop Android Application with Emacs - 2
+#+DATE: 2012-10-07 12:43
+#+SETUPFILE: ~/AeroFS/org-sty/setupfile.org
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_CATEGORIES: android
+#+JEKYLL_PUBLISHED: true
+
 * Android 布局
 ** 第一个简单的UI[fn:1]
 这个UI包含3个EditText和1个Button.
@@ -101,3 +98,5 @@ D/abovelink(  910): generate the QR code for  WIFI:T:ffff;S:rrr;P:hhhh;;
 * Footnotes
 [fn:1] http://developer.android.com/training/basics/firstapp/building-ui.html
 
+
+{{{more}}}

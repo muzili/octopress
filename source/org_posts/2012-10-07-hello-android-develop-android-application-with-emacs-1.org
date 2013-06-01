@@ -1,13 +1,10 @@
-#+BEGIN_HTML
----
-layout: post
-title: "Hello Android: Develop Android Application with Emacs - 1"
-date: 2012-10-07 08:36
-comments: true
-categories: android
-tags: android, emacs
----
-#+END_HTML
+#+TITLE: Hello Android: Develop Android Application with Emacs - 1 
+#+DATE: 2012-10-07 08:36
+#+SETUPFILE: ~/AeroFS/org-sty/setupfile.org
+#+JEKYLL_LAYOUT: post
+#+JEKYLL_CATEGORIES: android
+#+JEKYLL_PUBLISHED: true
+
 * 开始
 我对IDE开发环境有着天然的抗拒，无论VS/Eclipse etc.
 对于Android开发环境来说，到处充斥着使用Eclipse， 本系列博客
@@ -53,3 +50,5 @@ adn debug install
 [fn:1] http://developer.android.com/sdk/index.html
 [fn:2] http://developer.android.com/tools/sdk/ndk/index.html
 
+
+{{{more}}}
